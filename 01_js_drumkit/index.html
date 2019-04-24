@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Drum Kit</title>
+    <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>JS Drum Kit</h1>
+    </header>
+    <div id="beatsWrapper" class="beats">
+      <div data-key="65" class="beat">
+        <kbd>A</kbd>
+        <span class="sound">clap</span>
+      </div>
+      <div data-key="83" class="beat">
+        <kbd>S</kbd>
+        <span class="sound">hihat</span>
+      </div>
+      <div data-key="68" class="beat">
+        <kbd>D</kbd>
+        <span class="sound">kick</span>
+      </div>
+      <div data-key="70" class="beat">
+        <kbd>F</kbd>
+        <span class="sound">openhat</span>
+      </div>
+      <div data-key="71" class="beat">
+        <kbd>G</kbd>
+        <span class="sound">boom</span>
+      </div>
+      <hr>
+      <div data-key="72" class="beat">
+        <kbd>H</kbd>
+        <span class="sound">ride</span>
+      </div>
+      <div data-key="74" class="beat">
+        <kbd>J</kbd>
+        <span class="sound">snare</span>
+      </div>
+      <div data-key="75" class="beat">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+      </div>
+      <div data-key="76" class="beat">
+        <kbd>L</kbd>
+        <span class="sound">tink</span>
+      </div>
+    </div>
+
+    <audio data-key="65" src="wav/clap.wav"></audio>
+    <audio data-key="83" src="wav/hihat.wav"></audio>
+    <audio data-key="68" src="wav/kick.wav"></audio>
+    <audio data-key="70" src="wav/openhat.wav"></audio>
+    <audio data-key="71" src="wav/boom.wav"></audio>
+    <audio data-key="72" src="wav/ride.wav"></audio>
+    <audio data-key="74" src="wav/snare.wav"></audio>
+    <audio data-key="75" src="wav/tom.wav"></audio>
+    <audio data-key="76" src="wav/tink.wav"></audio>
+
+    <footer><small>Built as an exercise of <a href="https://javascript30.com/">JavaScript30</a>.</small></footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

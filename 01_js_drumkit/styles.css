@@ -1,0 +1,127 @@
+:root {
+  --sml-width-size: calc(50% - 2em);
+  --med-width-size: calc(33% - 2em);
+  --lrg-width-size: calc(20% - 2em);
+}
+
+html {
+  background-color: #fbce41;
+  color: snow;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1;
+  padding: 7.5vw 5vw;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.75em;
+  letter-spacing: .05em;
+  margin-bottom: 7.5vw;
+}
+
+small {
+  display: block;
+  letter-spacing: .05em;
+  margin-top: 7.5vw;
+  text-transform: uppercase;
+}
+
+a,
+a:visited {
+  color: #ff491a;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #2a2c36;
+  text-decoration: underline;
+}
+
+hr {
+  display: none;
+}
+
+.beats {
+  align-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.beat {
+  background-color: rgba(255,250,250,.40);
+  border-radius: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  flex: 0 1 var(--sml-width-size);
+  margin: 1em;
+  padding-bottom: var(--sml-width-size);
+  position: relative;
+  transition: all 0.3s;
+  width: var(--sml-width-size);
+}
+
+.beat--active {
+  transform: scale(.98);
+  background-color: snow;
+}
+
+kbd,
+.sound {
+  left: 0;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+kbd {
+  color: #2a2c36;
+  font-family: 'Yeseva One', cursive;
+  font-size: 10vw;
+  left: 0;
+  margin: 0 auto;
+  padding: .15em 0 0 .25em;
+  right: 0;
+  text-transform: lowercase;
+}
+
+.sound {
+  border-left: 4px solid #FF491A;
+  border-right: 4px solid #FF491A;
+  color: #ff491a;
+  font-size: 1em;
+  font-weight: 300;
+  margin: -20% 0 0 15%;
+  padding: .25em .75em;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 320px)  {
+  hr {
+    border: 0;
+    display: block;
+    margin: 0;
+    width: 100%;
+  }
+
+  .beat {
+    flex: 0 1 var(--med-width-size);
+    padding-bottom: var(--med-width-size);
+    width: var(--med-width-size);
+  }
+}
+
+@media only screen and (min-width: 768px)  {
+  h1 {
+    font-size: 2.5vw;
+  }
+
+  .beat {
+    flex: 0 1 var(--lrg-width-size);
+    padding-bottom: var(--lrg-width-size);
+    width: var(--lrg-width-size);
+  }
+}
