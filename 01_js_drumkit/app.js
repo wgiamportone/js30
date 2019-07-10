@@ -8,6 +8,7 @@
     if (!audio) return;
 
     audio.currentTime = 0;
+    console.log(beat);
     audio.play();
 
     beat.classList.add('beat--active');
@@ -19,5 +20,6 @@
   }
 
   beats.forEach(beat => beat.addEventListener('transitionend', removeTransition));
+  beats.forEach(beat => beat.addEventListener('click', playSound));
   window.addEventListener('keydown', playSound);
 })();
